@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema Oscuro (por defecto) */
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] html {
+  background-color: #0f172b;
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .theme-bg-primary {
+  background-color: #0f172b !important;
+}
+
+:root[data-theme="dark"] .theme-bg-secondary {
+  background-color: #1e293b !important;
+}
+
+:root[data-theme="dark"] .theme-text-primary {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .theme-text-secondary {
+  color: #cbd5e1 !important;
+}
+
+/* Tema Claro */
+:root[data-theme="light"] body,
+:root[data-theme="light"] html {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+:root[data-theme="light"] .theme-bg-primary {
+  background-color: #f8fafc !important;
+}
+
+:root[data-theme="light"] .theme-bg-secondary {
+  background-color: #ffffff !important;
+}
+
+:root[data-theme="light"] .theme-bg-sidebar {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .theme-bg-header {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .theme-text-primary {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .theme-text-secondary {
+  color: #475569 !important;
+}
+
+:root[data-theme="light"] .theme-border {
+  border-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .bg-slate-900 {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+:root[data-theme="light"] .bg-slate-800 {
+  background-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .border-slate-800,
+:root[data-theme="light"] .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .text-white {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .text-slate-300,
+:root[data-theme="light"] .text-gray-300 {
+  color: #475569 !important;
+}
+
+:root[data-theme="light"] .text-gray-400 {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+:root[data-theme="light"] .hover\:bg-slate-800:hover {
+  background-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .hover\:bg-slate-700:hover {
+  background-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Custom Scrollbar Styles */
+/* Para navegadores Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* slate-950 */
+  border-radius: 4px;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569; /* slate-600 */
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* slate-500 */
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #0f172a; /* thumb track */
+}
+
+:root[data-theme="light"] * {
+  scrollbar-color: #94a3b8 #e2e8f0;
+}
