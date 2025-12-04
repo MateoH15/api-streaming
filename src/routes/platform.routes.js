@@ -6,7 +6,7 @@ import {
 
 const router = express.Router();
 
-router.get("/plataformas", getPlataforms);
-router.get("/plataformas/:plataforma", getPlataforma);
+router.get("/api/plataformas", getPlataforms);
+router.get("/api/plataformas/:plataforma", getPlataforma);
 
 export default router;

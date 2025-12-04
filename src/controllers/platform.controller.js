@@ -2,7 +2,9 @@ import Platform from "../models/Platform.js";
 
 export const getPlataforms = async (req, res) => {
   try {
-    const plataformas = await Platform.find().select("-_id -__v -planes._id");
+    const plataformas = await Platform.find().select(
+      "-_id -__v -planes._id -basicID"
+    );
     res.json(plataformas);
   } catch (error) {
     res.status(500).json({ error: "Error al obtener las plataformas" });

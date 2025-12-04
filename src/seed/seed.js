@@ -12,22 +12,22 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Básico (Mensual)",
+        nombre: "Básico",
         precio: 4299,
         moneda: "ARS",
       },
       {
-        nombre: "Estándar (Mensual)",
+        nombre: "Estándar",
         precio: 7199,
         moneda: "ARS",
       },
       {
-        nombre: "Premium (Mensual)",
+        nombre: "Premium",
         precio: 9699,
         moneda: "ARS",
       },
       {
-        nombre: "Cuenta extra (Adicional)",
+        nombre: "Cuenta extra",
         precio: 1699,
         moneda: "ARS",
       },
@@ -78,7 +78,7 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Estándar (Mensual)",
+        nombre: "Estándar",
         precio: 3999,
         moneda: "ARS",
       },
@@ -91,12 +91,12 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Estándar (Mensual)",
+        nombre: "Estándar",
         precio: 10164,
         moneda: "ARS",
       },
       {
-        nombre: "Premium (Mensual)",
+        nombre: "Premium",
         precio: 15206,
         moneda: "ARS",
       },
@@ -109,7 +109,7 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Plan Único (Mensual)",
+        nombre: "Plan Único",
         precio: 6.99,
         moneda: "USD",
       },
@@ -122,27 +122,27 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Individual (Mensual)",
+        nombre: "Individual",
         precio: 3299,
         moneda: "ARS",
       },
       {
-        nombre: "Duo (Mensual)",
+        nombre: "Duo",
         precio: 4399,
         moneda: "ARS",
       },
       {
-        nombre: "Familiar (Mensual)",
+        nombre: "Familiar",
         precio: 5499,
         moneda: "ARS",
       },
       {
-        nombre: "Estudiantes (Mensual)",
+        nombre: "Estudiantes",
         precio: 1799,
         moneda: "ARS",
       },
       {
-        nombre: "Individual (Prepago Eq. Mensual)",
+        nombre: "Individual",
         precio: 2749.17,
         moneda: "ARS",
       },
@@ -155,17 +155,17 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Estudiante (Mensual)",
+        nombre: "Estudiante",
         precio: 1.99,
         moneda: "USD",
       },
       {
-        nombre: "Individual (Mensual)",
+        nombre: "Individual",
         precio: 3.29,
         moneda: "USD",
       },
       {
-        nombre: "Familiar (Mensual)",
+        nombre: "Familiar",
         precio: 5.49,
         moneda: "USD",
       },
@@ -231,22 +231,22 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Ultimate (Mensual)",
+        nombre: "Ultimate",
         precio: 10999,
         moneda: "ARS",
       },
       {
-        nombre: "Standard (Mensual)",
+        nombre: "Standard",
         precio: 8999,
         moneda: "ARS",
       },
       {
-        nombre: "PC Game Pass (Mensual)",
+        nombre: "PC Game Pass",
         precio: 6999,
         moneda: "ARS",
       },
       {
-        nombre: "Core (Mensual)",
+        nombre: "Core",
         precio: 5999,
         moneda: "ARS",
       },
@@ -259,12 +259,12 @@ const seedData = [
     ultimaActualizacion: "Fecha-desconocida",
     planes: [
       {
-        nombre: "Estándar (Mensual)",
+        nombre: "Estándar",
         precio: 3399,
         moneda: "ARS",
       },
       {
-        nombre: "Familiar (Mensual)",
+        nombre: "Familiar",
         precio: 6799,
         moneda: "ARS",
       },
