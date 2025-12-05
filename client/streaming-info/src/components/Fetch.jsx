@@ -4,7 +4,7 @@ function Fetch({ endpoint }) {
       <code className="text-green-400 text-sm">
         <span className="text-blue-400">fetch</span>(
         <span className="text-yellow-300">
-          'https://localhost:3000{endpoint}'
+          'https://api-streaming-wbne.onrender.com{endpoint}'
         </span>
         )<br />
         &nbsp;&nbsp;.<span className="text-blue-400">then</span>(response =&gt;

@@ -115,7 +115,7 @@ function Plataforma({ platform }) {
   const data = platformData[platform] || platformData.netflix;
 
   function copyToClipboard() {
-    const endpointUrl = `https://localhost:3000${data.endpoint}`;
+    const endpointUrl = `https://api-streaming-wbne.onrender.com${data.endpoint}`;
     navigator.clipboard
       .writeText(endpointUrl)
       .then(() => {
@@ -153,7 +153,7 @@ function Plataforma({ platform }) {
                 GET
               </span>
               <code id="endpoint" className="text-gray-300 font-mono ml-2">
-                https://localhost:3000{data.endpoint}
+                https://api-streaming-wbne.onrender.com{data.endpoint}
               </code>
             </div>
             <div>

@@ -21,7 +21,7 @@ function Main() {
           Servidor
         </h2>
         <p className="p-4 bg-white/80 rounded-lg font-semibold hover:underline cursor-pointer transition-all">
-          https://localhost:3000
+          https://api-streaming-wbne.onrender.com
         </p>
       </div>
 

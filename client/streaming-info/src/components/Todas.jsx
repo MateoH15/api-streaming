@@ -35,7 +35,7 @@ function Todas() {
                 GET
               </span>
               <code id="endpoint" className="text-gray-300 font-mono ml-2">
-                https://localhost:3000/api/plataformas
+                https://api-streaming-wbne.onrender.com/api/plataformas
               </code>
             </div>
             <div>
