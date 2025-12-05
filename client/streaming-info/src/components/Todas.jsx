@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Todas() {
   const [buttonText, setButtonText] = useState("Copiar");
-  const endpointUrl = "https://localhost:3000/api/plataformas";
+  const endpointUrl = "https://api-streaming-wbne.onrender.com/api/plataformas";
 
   function copyToClipboard() {
     navigator.clipboard

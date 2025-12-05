@@ -5,7 +5,7 @@ function Spotify() {
       <div className="bg-slate-900 p-4 rounded-lg border border-slate-700">
         <pre className="text-green-400 text-sm overflow-x-auto">
           {`{
-  "platforma": "Spotify",
+  "platforma": "plataforma",
   "logo": "logo_url",
   "ultimaActualizacion": "fecha",
   "planes": [
@@ -33,7 +33,7 @@ function Spotify() {
       "nombre": "nombre_plan",
       "precio": "precio",
       "moneda": "moneda"
-    },
+    }
   ]
 }`}
         </pre>
