@@ -7,12 +7,18 @@ export const getPlataforms = async (req, res) => {
     );
     res.json(plataformas);
   } catch (error) {
+    // Log estructurado sin exponer detalles sensibles
+    console.error("Error en getPlataforms:", {
+      message: error.message,
+      timestamp: new Date().toISOString(),
+    });
     res.status(500).json({ error: "Error al obtener las plataformas" });
   }
 };
 
 export const getPlataforma = async (req, res) => {
   const { plataforma } = req.params;
+
   try {
     const plataformaData = await Platform.findOne({
       basicID: plataforma,
@@ -24,7 +30,12 @@ export const getPlataforma = async (req, res) => {
 
     return res.json(plataformaData);
   } catch (error) {
-    console.error("Error en getPlataforma:", error);
+    // Log estructurado sin exponer detalles sensibles
+    console.error("Error en getPlataforma:", {
+      message: error.message,
+      plataforma: plataforma,
+      timestamp: new Date().toISOString(),
+    });
     return res.status(500).json({ error: "Error al obtener la plataforma" });
   }
 };

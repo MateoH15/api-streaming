@@ -3,10 +3,15 @@ import {
   getPlataforms,
   getPlataforma,
 } from "../controllers/platform.controller.js";
+import { validatePlataformaParam } from "../middleware/validation.js";
 
 const router = express.Router();
 
 router.get("/api/plataformas", getPlataforms);
-router.get("/api/plataformas/:plataforma", getPlataforma);
+router.get(
+  "/api/plataformas/:plataforma",
+  validatePlataformaParam,
+  getPlataforma
+);
 
 export default router;

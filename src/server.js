@@ -1,6 +1,22 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+// Validar variables de entorno requeridas
+const requiredEnvVars = ["MONGODB_URI"];
+const missingEnvVars = requiredEnvVars.filter(
+  (varName) => !process.env[varName]
+);
+
+if (missingEnvVars.length > 0) {
+  console.error(
+    `❌ Error: Faltan variables de entorno requeridas: ${missingEnvVars.join(
+      ", "
+    )}`
+  );
+  console.error("Por favor, configura estas variables en tu archivo .env");
+  process.exit(1);
+}
+
 import express from "express";
 import connectDB from "./config/db.js";
 import app from "./app.js";
