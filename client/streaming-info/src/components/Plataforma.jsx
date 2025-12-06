@@ -14,7 +14,6 @@ import Fetch from "./Fetch";
 function Plataforma({ platform }) {
   const [buttonText, setButtonText] = useState("Copiar");
 
-  // Mapeo de plataformas a sus componentes JSON
   const jsonComponents = {
     netflix: Netflix,
     disney: Disney,
@@ -28,7 +27,6 @@ function Plataforma({ platform }) {
     xbox: Xbox,
   };
 
-  // Datos de las plataformas
   const platformData = {
     netflix: {
       name: "Netflix",

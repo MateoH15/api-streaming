@@ -7,7 +7,6 @@ export const getPlataforms = async (req, res) => {
     );
     res.json(plataformas);
   } catch (error) {
-    // Log estructurado sin exponer detalles sensibles
     console.error("Error en getPlataforms:", {
       message: error.message,
       timestamp: new Date().toISOString(),
@@ -30,7 +29,6 @@ export const getPlataforma = async (req, res) => {
 
     return res.json(plataformaData);
   } catch (error) {
-    // Log estructurado sin exponer detalles sensibles
     console.error("Error en getPlataforma:", {
       message: error.message,
       plataforma: plataforma,

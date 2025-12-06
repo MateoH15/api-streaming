@@ -1,7 +1,6 @@
 function Header({ onToggleSidebar }) {
   return (
     <header className="flex justify-between p-5 bg-slate-900 border-b border-slate-800 items-center">
-      {/* Hamburger Button - Solo visible en pantallas pequeñas */}
       <button
         onClick={onToggleSidebar}
         className="lg:hidden text-white hover:bg-slate-700 p-2 rounded-lg transition-all duration-200"

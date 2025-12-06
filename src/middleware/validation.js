@@ -1,8 +1,5 @@
 import { param, validationResult } from "express-validator";
 
-/**
- * Middleware para validar el parámetro de plataforma
- */
 export const validatePlataformaParam = [
   param("plataforma")
     .trim()

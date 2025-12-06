@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-// Validar variables de entorno requeridas
 const requiredEnvVars = ["MONGODB_URI"];
 const missingEnvVars = requiredEnvVars.filter(
   (varName) => !process.env[varName]

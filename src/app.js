@@ -6,17 +6,14 @@ import router from "./routes/platform.routes.js";
 
 const app = express();
 
-// Configuración de seguridad con Helmet
 app.use(helmet());
 
-// Configuración de CORS con orígenes específicos
 const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(",") || [
   "http://localhost:5173",
 ];
 
 const corsOptions = {
   origin: function (origin, callback) {
-    // Permitir peticiones sin origin (como Postman, curl, etc.)
     if (!origin) return callback(null, true);
 
     if (allowedOrigins.indexOf(origin) !== -1) {

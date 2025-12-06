@@ -1,7 +1,6 @@
 function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
   return (
     <>
-      {/* Overlay - Solo visible en móvil cuando el sidebar está abierto */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
