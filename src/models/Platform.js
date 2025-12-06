@@ -23,10 +23,6 @@ const platformSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  logo: {
-    type: String,
-    required: true,
-  },
   ultimaActualizacion: {
     type: String,
     required: true,

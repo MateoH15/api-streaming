@@ -8,7 +8,6 @@ function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
         />
       )}
 
-      {/* Sidebar */}
       <aside
         className={`
         w-64 shrink-0 bg-slate-900 border-r border-slate-800 h-[calc(100vh-73px)] p-5 overflow-y-auto
@@ -17,7 +16,6 @@ function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
       `}
       >
-        {/* Home Button */}
         <div
           onClick={() => onSelectPlatform("main")}
           className={`mb-6 px-3 py-2 rounded-lg cursor-pointer transition-all duration-200 ease-in-out flex items-center gap-2 ${
@@ -42,7 +40,6 @@ function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
           Plataformas
         </h2>
 
-        {/* Streaming Section */}
         <div className="mb-6">
           <h3 className="text-emerald-400 text-sm font-semibold uppercase tracking-wider mb-3 flex items-center gap-2">
             <svg
@@ -106,7 +103,6 @@ function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
           </div>
         </div>
 
-        {/* Music Section */}
         <div className="mb-6">
           <h3 className="text-purple-400 text-sm font-semibold uppercase tracking-wider mb-3 flex items-center gap-2">
             <svg
@@ -150,7 +146,6 @@ function Sidebar({ onSelectPlatform, currentView, isOpen, onClose }) {
           </div>
         </div>
 
-        {/* Gaming Section */}
         <div className="mb-6">
           <h3 className="text-cyan-400 text-sm font-semibold uppercase tracking-wider mb-3 flex items-center gap-2">
             <svg

@@ -29,10 +29,9 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// Rate Limiting - Protección contra ataques de fuerza bruta
 const limiter = rateLimit({
-  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000, // 15 minutos por defecto
-  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100, // límite de peticiones
+  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000,
+  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100,
   message: {
     error:
       "Demasiadas peticiones desde esta IP, por favor intenta de nuevo más tarde",
@@ -41,7 +40,6 @@ const limiter = rateLimit({
   legacyHeaders: false,
 });
 
-// Aplicar rate limiting a todas las rutas de la API
 app.use("/api/", limiter);
 
 app.use(express.json());

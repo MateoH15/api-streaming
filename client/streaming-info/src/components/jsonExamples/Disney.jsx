@@ -18,6 +18,11 @@ function Disney() {
       "nombre": "nombre_plan",
       "precio": "precio",
       "moneda": "moneda"
+    },
+    {
+      "nombre": "nombre_plan",
+      "precio": "precio",
+      "moneda": "moneda"
     }
   ]
 }`}
