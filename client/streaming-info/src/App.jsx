@@ -6,21 +6,31 @@ import Plataforma from "./components/Plataforma.jsx";
 
 function App() {
   const [currentView, setCurrentView] = useState("main");
-  const [theme, setTheme] = useState("dark");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+    document.documentElement.setAttribute("data-theme", "dark");
+  }, []);
 
-  const toggleTheme = (newTheme) => {
-    setTheme(newTheme);
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleSelectPlatform = (platform) => {
+    setCurrentView(platform);
+    setIsSidebarOpen(false); // Cerrar sidebar al seleccionar una plataforma en móvil
   };
 
   return (
     <>
-      <Header theme={theme} onThemeChange={toggleTheme} />
+      <Header onToggleSidebar={toggleSidebar} />
       <div className="flex">
-        <Sidebar onSelectPlatform={setCurrentView} currentView={currentView} />
+        <Sidebar
+          onSelectPlatform={handleSelectPlatform}
+          currentView={currentView}
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
         {currentView === "main" ? (
           <Main />
         ) : (
