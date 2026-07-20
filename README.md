@@ -1,21 +1,21 @@
-# 🎬 API Streaming
+# API Streaming
 
 API RESTful para obtener información detallada sobre plataformas de streaming (video, música y gaming). Incluye datos de planes, precios, características y más.
 
-## 🚀 Características
+## Características
 
-- ✅ **API REST** con Express.js
-- 🔒 **Seguridad** con Helmet y CORS configurado
-- 🛡️ **Rate Limiting** para prevenir abuso
-- ✔️ **Validación de datos** con express-validator
-- 🗄️ **Base de datos** MongoDB con Mongoose
-- ⚛️ **Frontend** React + Vite + TailwindCSS
-- 🎨 **Interfaz moderna** con modo oscuro
-- 📱 **Responsive design**
+- **API REST** con Express.js
+- **Seguridad** con Helmet y CORS configurado
+- **Rate Limiting** para prevenir abuso
+- **Validación de datos** con express-validator
+- **Base de datos** MongoDB con Mongoose
+- **Frontend** React + Vite + TailwindCSS
+- **Interfaz moderna** con modo oscuro
+- **Responsive design**
 
-## 🎯 Plataformas
+## Plataformas
 
-### 🎥 Streaming de Video
+### Streaming de Video
 
 - Netflix
 - Disney+
@@ -23,18 +23,18 @@ API RESTful para obtener información detallada sobre plataformas de streaming (
 - Amazon Prime Video
 - Apple TV+
 
-### 🎵 Streaming de Música
+### Streaming de Música
 
 - Spotify
 - Apple Music
 - YouTube Music
 
-### 🎮 Gaming
+### Gaming
 
 - PlayStation Plus
 - Xbox Game Pass
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Obtener todas las plataformas
 
@@ -97,7 +97,7 @@ GET /api/plataformas/netflix
 }
 ```
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 api-streaming/
@@ -124,7 +124,7 @@ api-streaming/
 └── README.md
 ```
 
-## 🔒 Seguridad
+## Seguridad
 
 - **Helmet**: Protección contra vulnerabilidades comunes
 - **CORS**: Control de acceso desde orígenes permitidos
@@ -132,7 +132,7 @@ api-streaming/
 - **Validación**: Validación de parámetros con express-validator
 - **Variables de entorno**: Datos sensibles protegidos
 
-## 🛡️ Rate Limiting
+## Rate Limiting
 
 La API implementa rate limiting para prevenir abuso:
 
@@ -140,7 +140,7 @@ La API implementa rate limiting para prevenir abuso:
 - **Máximo de peticiones**: 100 por ventana (configurable)
 - **Respuesta**: HTTP 429 cuando se excede el límite
 
-## 🤝 Contribuir
+## Contribuir
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -150,14 +150,14 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia ISC.
 
-## 👤 Autor
+## Autor
 
 **Mateo Herrera**
 
 - GitHub: [@MateoH15](https://github.com/MateoH15)
 
-⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub
+Si este proyecto te fue útil, considera darle una estrella!
